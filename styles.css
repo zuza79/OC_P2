@@ -196,6 +196,18 @@ margin-right: 13px;
     margin-bottom: 0px;
 }
 
+.pluspop
+{
+    background-color: gray;
+    width: 100%;
+}
+
+.pluspop
+{display: flex;
+flex-direction: row;
+justify-content: space-around;}
+
+
 
 
 
