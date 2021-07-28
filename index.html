@@ -17,8 +17,8 @@
         </div>
         
         <nav class="menu">   
-            <a class="menu-item" href="#">Hébergements</a>
-            <a class="menu-item" href="#">Activités</a>
+            <a class="menu-item" href="#ancrehebergement">Hébergements</a>
+            <a class="menu-item" href="#ancreactivite">Activités</a>
         </nav>
             <div class="inscription" >
                 <a id="signLink" href="#">S'inscrire</a>
@@ -33,10 +33,14 @@
     <p class="txtnormal">En plein centre de ville ou en plaine nature</p>
       
     <form class="formrecher" method="GET">
+
         <i id="map" class="fas fa-map-marker-alt fa 1x"></i> 
-        <input id="rechercher" class="intrechercher" type="search" placeholder="Marseille, France"/>
-        <i id="iconrecher" class="fas fa-search fa-1x"></i><span class="textrecher">Rechercher</span>
+        <input id="rechercher" class="intrechercher" type="search" placeholder="Marseille, France" style=color:black/>
+        <a href="#"><i id="iconrecher" class="fas fa-search fa-1x"></i><span class="textrecher">Rechercher</span></a>
     </form>
+    
+         
+   
 
   <!--filtres-->
     <div id="filtres">
@@ -75,7 +79,7 @@
         <div id="iconechart"><i class="fas fa-chart-line fa-2x font-weight:900"></i></div>
     </div>
 
-    <div class="blocpop">
+    <a href="#" class="blocpop">
         <img class="blocimage" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de chambre">
         <div class="bloctext">
             <p class="titreheb">Hôtel Le soleil du matin</p>
@@ -90,7 +94,7 @@
                 </ul>
             </div>
         </div> 
-    </div>
+    </a>
     <div class="blocpop">
         <img class="blocimage" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de chambre">
         <div class="bloctext">
@@ -107,10 +111,26 @@
             </div>
         </div> 
     </div>
+    <div class="blocpop">
+        <img class="blocimage" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de chambre">
+        <div class="bloctext">
+            <p class="titreheb">Hôtel Tout bleu et blanc</p>
+            <p class="prixpop">Nuit à partir de 68<span class="euro">€</span></p>
+            <div class="etoilespop">
+                <ul class="ulpop">
+                  <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                  <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                  <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                  <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                  <li><i class="fas fa-star fa-xs" style=color:#f2f2f2></i></li>
+                </ul>
+            </div>
+        </div> 
+    </div>
 </div>
 
 <!--Hébergement à Marseille-->
-<div class="hebergement"> 
+<div class="hebergement" id="ancrehebergement"> 
 <p class="txttitre1">Hébergement à Marseille</p>
     <div class="blocheb1">
         <div class="blocheb" id="blocheb1a" >
@@ -163,18 +183,67 @@
                 </div>
             </div>   
         </div>
-
+    </div>
+    <div class="blocheb2">
+        <div class="blocheb" id="blocheb2a" >
+        <img class="imgheber" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo chambre d'hôtel">
+        <div class="bloctextheb" >
+            <p class="hebtext">Hôtel de la mer</p>
+            <p class="prixheb">Nuit à partir de 46<span class="euro">€</span></p>
+            <div class="etoiles">
+                <ul class="ulheb">
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#f2f2f2></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#f2f2f2></i></li>
+                </ul>
+            </div>
+        </div>   
     </div>
 
-    <!------a faire encore 3 photos-->
-    <div class="blocheb2">blocheb2 (a-c) avec 3 photos</div>
+    <div class="blocheb" id="blocheb2b" >
+        <img class="imgheber" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de chambre d'hôtel">
+        <div class="bloctextheb" >
+            <p class="hebtext">Auberge Le Panier</p>
+            <p class="prixheb">Nuit à partir de 23<span class="euro">€</span></p>
+            <div class="etoiles">
+                <ul class="ulheb">
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#f2f2f2></i></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+
+    <div class="blocheb" id="blocheb3c" >
+        <img class="imgheber" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo de chambre d'hôtel">
+        <div class="bloctextheb" >
+            <p class="hebtext">Hôtel chez Amina</p>
+            <p class="prixheb">Nuit à partir de 96<span class="euro">€</span></p>
+            <div class="etoiles">
+                <ul class="ulheb">
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                    <li><i class="fas fa-star fa-xs" style=color:#0065fc></i></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+</div>
 
 <h2 class="txttitre2">Afficher plus</h2>
 </div>
+
 </section>
 
 <!--Activité-->
-<section class="activitephoto">
+<section class="activitephoto" id="ancreactivite">
 <h2 class="txttitreactiv">Activité à Marseille</h2>
 <div class="imageactivite">
 
