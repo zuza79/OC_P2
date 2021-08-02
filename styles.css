@@ -1,16 +1,8 @@
-/* Mobile First----niveau1----iphone8 375px-----*/
-
-/* au total 4 niveaux de responsive
-    niveau1 mobile                max 480px
-    niveau2             min 481px max 768px
-    niveau3             min 769px max 1279px
-    niveau4 desktop     min 1280px -------*/
-
+/* Mobile First----pondeli havres----iphone8 375px-----*/
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0px;
 }
-
 header{ 
     display: grid;
     grid-template: "topLeft  topRight" 120px
@@ -30,6 +22,7 @@ header{
 .menu-item{
     text-decoration: none;
     color: black;
+    font-weight: bolder;
     width: 100%;
     border-bottom: #F2F2F2 3px solid;
 }
@@ -48,8 +41,25 @@ header{
     color: #0065FC;
     font-weight: 600;
 }
+/*Parametre de police*/
+.titre1{
+    font-size: 20px;
+    font-weight: 900;
+}
+.titre2{
+    font-size: 16px;
+    font-weight: 900;
+}
+.txtnormal{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+.titreheb{
+    font-weight: 900;
+}
 /*Trouver votre hébergement*/
-.section1{
+.trouverhebergement{
 padding-left: 20px;
 padding-right: 20px;
 }
@@ -57,24 +67,11 @@ padding-right: 20px;
     font-size: 20px;
     font-weight: 900;
 }
-.txttitre1{
-    font-size: 20px;
-    font-weight: 900;
-    padding-left: 20px;
+.txtpop{
+    font-size: 18px;
+    font-weight:900;
 }
-.txttitre2{
-    font-size: 16px;
-    font-weight: 700;
-    padding-left: 20px;
-    margin-top: 20px;
-}
-.txtnormal{
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.01em;
-    padding-left: 10px;
-}
-.formrecher{
+.formulaire{
     display: flex;
     justify-content: start;
     flex-direction: row;
@@ -82,6 +79,7 @@ padding-right: 20px;
     height: 50px;
     width: 335px;
     padding-top: 30px;
+    margin-bottom: 50px;
 }
 #map{
     display: flex;
@@ -100,25 +98,18 @@ padding-right: 20px;
     border-right: none;
     padding-left: 20px;
     color: black;
-    font-weight: 700;
-    
+    font-weight: 700;  
 }
 a{
     text-decoration: none;
     color: black;
 }
-
 .intrechercher{
     font-family: raleway;
     font-size: 15px;
     font-weight: 700;
     color: black;
 }
-input{
-    color: black;
-    font-weight: 700;
-}
-
 #iconrecher{
     display: flex;
     justify-content: center;
@@ -130,8 +121,7 @@ input{
     background-color: #0065fc;
     border-radius: 20px 20px 20px 20px;
 }
-
- #map:hover, .textrecher:hover{
+#map:hover, .textrecher:hover{
     color:#0065fc;
     background-color: #F2F2F2
 }
@@ -150,7 +140,7 @@ input{
     text-align: center;
     border: #F2F2F2 solid 2px;
     border-left: #DEEBFF;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     height: 48px;
     margin-bottom: 15px;
 }
@@ -179,7 +169,7 @@ input{
 }
 .h-text{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 900;
     padding-left: 10px;
     padding-right: 20px;
     margin-bottom: 0px;
@@ -193,21 +183,20 @@ input{
 /*information*/
 #info{
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    align-items: flex-start;
     padding-top: 30px;
 }
 #iconeinfo{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align:initial;
-    width: 25px;
+    text-align:start;
+    width: 20px;
+    height: 20px;
     color: #0065FC;
-    height: 25px;
     border-radius: 100%;
     border: #F2F2F2 solid 1px;
-    margin-right: 13px;
+    margin-right: 5px;
 }
 
 #textinfo{
@@ -218,9 +207,8 @@ input{
 /*Les plus populaires*/
 .pluspop{
     background-color: #F2F2F2;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 10px;
+    height: auto;
 }
 .pop{
     display: flex;
@@ -228,18 +216,15 @@ input{
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 .blocpop{
-    width:330px;
+    width: 330px;
     height: 145px;
     background-color: white;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
-    padding-bottom: 10px;
+    padding: 3px;
     margin-bottom: 10px;
     box-shadow: 5px 5px 5px 3px #F2F2F2;
 }
@@ -247,18 +232,20 @@ input{
     cursor: pointer;
     transform: scale(1.2);
 }
-.blocimage{
-    height:145px;
-    width: 35%;
-    border-radius: 25px 0 0 25px;
-    padding-top: 5px;
-    padding-left: 5px;
+.imgpop{
+    width: 125px;
+    height:140px;
+    padding: 3px;
+    border-radius: 25px 0 0 25px  ;
     object-fit: cover;
 }
 .bloctext{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     padding-left: 20px;
     text-align: left;
-    padding-right: 20px;
+    padding-right: 50px;
 }
 .ulpop{
     padding-top: 15px;
@@ -272,55 +259,44 @@ input{
     margin-bottom: 0px;
     letter-spacing: 2px;
 }
-.titreheb{
-    font-weight: 900;
-    font-size: 16px;
-}
 .prixheb{
     font-size: 12px;
     font-weight: 200;
-    padding-left: 10px;
-    margin-bottom: 5px;
     margin-top: 5px;
 }
 .prixpop{
     font-size: 12px;
     font-weight: 200;
-    margin-top: 5px;
-    padding-bottom: 0px;
-    padding-bottom: 10px;
-    }
+    margin-top: 0px;
+}
 .euro{
     font-weight: 900;
 }
 .hebtext{
     font-size: 14px;
-    font-weight: 600;
-    padding-left: 10px;
+    font-weight: 900;
     padding-right: 20px;
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 .etoilespop{
-    padding-bottom: 5px;
-    padding-left:0px;
+   padding-left:0px;
 }
 .etoiles{
-    padding-left: 10px;
     padding-bottom: 10px;
 }
 /*Hébergement à Marseille*/
 .hebergement{
-    margin-bottom: 40px;
+    padding: 20px;
     height: auto;
 }
 .blocheb{
-    width:330px;
-    height: 205px;
-    background-color:white;
-    border-radius: 25px 25px 25px 25px;
+    width:100%;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
 }
@@ -329,18 +305,17 @@ input{
     transform: scale(1.2);
 }
 .imgheber{
-    height:60%;
-    width: 320px;
+    height:120px;
+    padding: 5px;
     border-radius: 25px 25px 0 0 ;
-    padding-top: 5px;
-    padding-left: 5px;
     object-fit: cover;
 }
 .bloctextheb{
+    width: 90%;
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 .ulheb{
     height: 14px;
@@ -354,26 +329,24 @@ input{
     margin-bottom: 0px;
 }
 /*Activite*/
-.txttitreactiv{
-    font-size: 20px;
-    font-weight: 900;
+.activiteimg{
     padding-left: 20px;
 }
-.imageactivite{
+
+.imgactivite{
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
     width: 100%;
 }
 .activite{
-    width:330px;
+    width:335px;
     height: 190px;
     background-color:white;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin-left: 20px;
     margin-bottom: 20px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
 }
@@ -387,13 +360,18 @@ input{
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
+.activtext{
+    font-size: 14px;
+    font-weight: 900;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+}
+
 /*footer*/
 .footer{
-    background-color: gray;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    background-color: #F2F2F2;
+    padding: 30px;
 }
 .footerh2{
     font-size: 15px;
@@ -401,7 +379,7 @@ input{
     padding-top: 15px;
 }
 .pfooter{
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
     color: black;
     height: 30px;
@@ -420,15 +398,12 @@ input{
     justify-content: flex-start;
     width: 100%;
 }
-/*------------responsive desktop--niveau4 (max)----------------*/
-@media screen and (min-width: 1280px) {
-body{
-    max-width: 1440px;
-    margin: auto;
-}
+/*------------ desktop-----------------*/
+@media screen and (min-width: 800px) {
 /*header*/
 header{ 
     grid-template: "topLeft top top topRight" 100px / auto 160px 160px 100px;
+    width: auto;
 }
 .menu{
    grid-area: top;
@@ -445,14 +420,19 @@ header{
 #signLink{
     padding-right: 80px;
 }
+.inscription{
+    padding-top:53px;
+}
+.logo{
+    padding-left: 55px;
+}
 /*parametre des titres*/
 .txttitre{
     padding-left: 20px;
 }
-.txttitre1{
-    font-size: 20px;
+.titre1{
+    font-size:50px;
     font-weight: 900;
-    padding-left: 0px;
 }
 .txttitreactiv{
    padding-left: 20px;
@@ -460,11 +440,14 @@ header{
 .txtnormal{
     padding-left: 0px;
 }
-.formrecher{
+.formulaire{
     width: 420px;
     padding-top: 20px;
+    margin-bottom: 50px;
 }
-
+.section1{
+    padding-left: 55px;
+}
 /*formulaire rechercher*/
 #iconrecher{
     display: none;
@@ -487,7 +470,6 @@ header{
 #filtres{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
 }
 #economique, #familial, #romantique, #animaux{
     margin-right: 25px;
@@ -502,364 +484,130 @@ header{
     justify-content:flex-end;
     align-items:flex-start;
     text-align:left;
-    padding-left: 20px;
-    height: auto;
-    width: 100%;
+    margin-bottom: 50px;
+    margin-left:50px;
 }
 .hebergement{
+    flex: 65%;    
     background-color: #F2F2F2;
-    width: 100%;
-    height: auto;
-    border-radius: 25px 25px 25px 25px;
-    margin-right: 40px;
-    padding-left: 20px;
+    height: 600px;
+    border-radius: 25px;
+    margin-right: 20px;
     padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 .blocheb1, .blocheb2{
-    display: flex;
+    display: flex; 
     flex-direction: row;
+    justify-content: space-between;
     padding-right: 0px;
-}
-#blocheb1a #blocheb2a{
-    margin-left: 0px;
-}
-.pop{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.pluspop{
-    border-radius: 25px 25px 25px 25px;
-    width: 420px;
-    height: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-bottom: 20px;
 }
 .blocheb{
     width:245px;
+    height:200px;
+    margin-right: 20px;
 }
-.imgheber{
-    width: 233px;
+.bloctextheb{
+    padding-left: 15px;
 }
-.txttitreactiv{
-    font-size: 20px;
-    font-weight: 900;
-    padding-left: 20px;
-    padding-left: 0px;
+.pop{
+    padding-bottom: 5px;
 }
-.hebtext{
-    padding-left: 0px;
-    margin-left: 0px;
+.pluspop{
+    flex: 30%;
+    border-radius: 25px;
+    width: 420px;
+    height: 600px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 40px;  
+}
+.titreheb{
+    margin-bottom: 5px;
+    padding-right: 30px;
+}
+.bloctext{
+    padding-right: 0px;
 }
 .blocpop{
-    margin-bottom: 40px;
-    padding-left: 0px;
-    margin-left: 0px;
-}
-/*Activite*/
-.txttitre2{
-    padding-left: 15px;
-}
-.activitedesktop{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+        margin-bottom: 30px;
 }
 .hebtext{
-    padding-left: 15px;
-    padding-top: 5px;
+    margin-top: 0px;
+}
+h4{
+    margin-top: 0px;
+}
+.etoilespop{
+    padding-top: 10px;
+}
+        /*Activite*/
+.txttitreactiv{
+    padding-left: 0px;
+}
+.activitephoto{
+margin-bottom: 55px;   
+margin-left: 50px; 
+}
+.activtext{
+    margin-bottom: 15px;
 }
 .imageactivite{
+    width: 100%;
+    height: 445px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-#imgactivite1{
-    height:445px;
+.activite{
+    height: auto;
+    margin-bottom: 0px;
     width: 305px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area: 1 / 1 / 3 / 3;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-#imageactiv1{
-    height:390px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-.imgactiv{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-}
-#imgactivite2{
-    height:240px;
-    width: 305px;
-    margin-bottom: 30px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area: 1 / 2 / 3 / 2;
-}
-#imageactiv2{
-    height:180px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite3{
-    height:165px;
-    width: 305px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area: 2 / 2 / 3 / 2;
-}
-#imageactiv3{
-    height:115px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite4{
-    height:445px;
-    width: 305px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area:1 / 3 / 3 / 4;
-}
-#imageactiv4{
-    height:390px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite5{
-    height:200px;
-    width: 305px;
-    margin-bottom: 30px;
-    border-radius: 25px 25px 25px 25px ;
-}
-#imageactiv5{
-    height:140px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite6{
-    height:205px;
-    width: 305px;
-    border-radius: 25px 25px 25px 25px ;
-    grid-area: 2 / 4 / 3 / 4;
-}
-#imageactiv6{
-    height:155px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-/*Footer*/
-.footer{
+.blocactivite{
+    display: flex;
     flex-direction: row;
-}
-.footer1,.footer2, .footer3{
-    width: 33%;
-}
-}
-
-
-/*------------responsive niveau3------------------*/
-@media screen (min-width: 769px) and (max-width: 1023px){
-    body{
-        margin: auto;
-    }
-    header{ 
-        grid-template: "topLeft top top topRight" 60px / auto 120px 120px 120px;
-    }
-    .menu{
-       grid-area: top;
-    }
-    .menu-item{
-        padding-top: 50px;
-        border-bottom: none;
-        border-top: #F2F2F2 3px solid;
-    }
-    .menu-item:hover{
-        border-color: #0065FC;
-        color:  #0065FC;
-    }
-    #signLink{
-        padding-right: 80px;
-    }
-    .txttitre{
-        padding-left: 20px;
-    }
-    .txttitre1{
-        font-size: 20px;
-        font-weight: 900;
-        padding-left: 0px;
-    }
-    .txttitreactiv{
-       padding-left: 20px;
-    }
-    .txtnormal{
-        padding-left: 0px;
-    }
+    justify-content: space-around;
+    height: 100%;
     
-    /*filtre*/
-#filtres{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-}
-#economique, #familial, #romantique, #animaux{
-    margin-right: 25px;
-}
-#economique{
-    margin-left: 35px;
-}
-/*hebergement et plus populaire*/
-.hebetpop{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content:flex-end;
-    align-items:flex-start;
-    text-align:left;
-    padding-left: 20px;
-    height: auto;
-    width: 100%;
-}
-.hebergement{
-    background-color: #F2F2F2;
-    width: 100%;
-    height: auto;
-    border-radius: 25px 25px 25px 25px;
-    margin-right: 40px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-.blocheb1, .blocheb2{
-    display: flex;
-    flex-direction: row;
-    padding-right: 0px;
-}
-#blocheb1a #blocheb2a{
-    margin-left: 0px;
-}
-.pop{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.pluspop{
-    border-radius: 25px 25px 25px 25px;
-    width: 420px;
-    height: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.blocheb{
-    width:245px;
-}
-.imgheber{
-    width: 233px;
-}
-.txttitreactiv{
-    font-size: 20px;
-    font-weight: 900;
-    padding-left: 20px;
-    padding-left: 0px;
-}
-.hebtext{
-    padding-left: 0px;
-    margin-left: 0px;
-}
-.blocpop{
-    margin-bottom: 40px;
-    padding-left: 0px;
-    margin-left: 0px;
-}
-/*Activite*/
-.txttitre2{
-    padding-left: 15px;
 }
 .activitedesktop{
+    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-between;
 }
-.hebtext{
-    padding-left: 15px;
-    padding-top: 5px;
-}
-.imageactivite{
-    display: flex;
-    flex-direction: row;
-}
-#imgactivite1{
-    height:445px;
+.imgactivite14{
+    height: 400px;
     width: 305px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area: 1 / 1 / 3 / 3;
 }
-#imageactiv1{
-    height:390px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
+.imgactivite2{
+   height: 180px;
 }
-.imgactiv{
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
+.imgactivite3{
+   height: 115px;
 }
-#imgactivite2{
-    height:240px;
-    width: 305px;
-    margin-bottom: 30px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area: 1 / 2 / 3 / 2;
-}
-#imageactiv2{
-    height:180px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite3{
-    height:165px;
-    width: 305px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area: 2 / 2 / 3 / 2;
-}
-#imageactiv3{
-    height:115px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite4{
-    height:445px;
-    width: 305px;
-    border-radius: 25px 25px 25px 25px;
-    grid-area:1 / 3 / 3 / 4;
-}
-#imageactiv4{
-    height:390px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite5{
-    height:200px;
-    width: 305px;
-    margin-bottom: 30px;
-    border-radius: 25px 25px 25px 25px ;
-}
-#imageactiv5{
-    height:140px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
-#imgactivite6{
-    height:205px;
-    width: 305px;
-    border-radius: 25px 25px 25px 25px ;
-    grid-area: 2 / 4 / 3 / 4;
-}
-#imageactiv6{
-    height:155px;
-    width: 305px;
-    border-radius: 25px 25px 0px 0px;
-}
+.imgactivite56{
+    height: 145px;
+ }
+
 /*Footer*/
 .footer{
     flex-direction: row;
+    width: auto;
 }
 .footer1,.footer2, .footer3{
     width: 33%;
+    margin-right: 55px;
 }
 }
-/*------------responsive niveau2------------------*/
-@media screen and (min-width: 481px) and (max-width: 768px){
+
+
