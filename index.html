@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<!--Header-->
     <header >
         <div class="logo">
             <img src="images/logo/Reservia.svg" alt="logo Reservia">
@@ -21,23 +22,23 @@
             <a class="menu-item" href="#ancreactivite">Activités</a>
         </nav>
             <div class="inscription" >
-                <a id="signLink" href="#">S'inscrire</a>
+                <a id="inscriptionLien" href="#">S'inscrire</a>
             </div>
     </header>
 
- <!--section Trouver votre hébergement avec les filtres-->
+ <!--Trouver votre hébergement-->
 <div class="trouverhebergement">
-    <p class="titre1">Trouvez votre hébergement pour des vacances de rêve</p>
-    <p class="txtnormal">En plein centre de ville ou en plaine nature</p>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p>En plein centre de ville ou en plaine nature</p>
       
     <form class="formulaire" method="GET">
         <i id="map" class="fas fa-map-marker-alt fa 1x"></i> 
         <input id="rechercher" class="intrechercher" type="search" placeholder="Marseille, France"/>
         <a href="#"><i id="iconrecher" class="fas fa-search fa-1x"></i><span class="textrecher">Rechercher</span></a>
     </form>     
-<!--filtres-->
+<!--Filtres-->
     <div id="filtres">
-        <p class="titre2">Filtres</p>
+        <h2>Filtres</h2>
             <div class="ecofam">
                 <div class="filter" id="economique">
                     <div class="h-icone"><i class="fas fa-money-bill-wave fa-1x"></i></div>
@@ -58,7 +59,7 @@
             </div>  
     </div>
 
-  <!--information-->
+  <!--Information-->
     <div id="info">
         <i id="iconeinfo" class="fas fa-info fa-xs"></i><p id=textinfo>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
@@ -68,13 +69,14 @@
 <section class="hebetpop">
     <div class="pluspop">
         <div class="pop">
-            <p class="titre2">Les plus populaires</p>
+            <h2>Les plus populaires</h2>
             <div id="iconechart"><i class="fas fa-chart-line fa-2x font-weight:900"></i></div>
         </div>
-    <a href="#" class="blocpop">
+    <div class="blocpopresponsive">
+        <a href="#" class="blocpop">
         <img class="imgpop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de chambre">
         <div class="bloctext">
-            <p class="titreheb">Hôtel Le soleil du matin</p>
+            <h3>Hôtel Le soleil du matin</h3>
             <p class="prixpop">Nuit à partir de 128<span class="euro">€</span></p>
             <div class="etoilespop">
                 <ul class="ulpop">
@@ -90,7 +92,7 @@
     <a href="#" class="blocpop">
         <img class="imgpop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de chambre">
         <div class="bloctext">
-            <p class="titreheb">Au coeur de l'eau Chambre d'hôtes</p>
+            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
             <p class="prixpop">Nuit à partir de 71<span class="euro">€</span></p>
             <div class="etoilespop">
                 <ul class="ulpop">
@@ -106,7 +108,7 @@
     <a href="#" class="blocpop">
         <img class="imgpop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de chambre">
         <div class="bloctext">
-            <p class="titreheb">Hôtel Tout bleu et Blanc</p>
+            <h3>Hôtel Tout bleu et Blanc</h3>
             <p class="prixpop">Nuit à partir de 68<span class="euro">€</span></p>
             <div class="etoilespop">
                 <ul class="ulpop">
@@ -120,15 +122,16 @@
         </div> 
     </a>
 </div>
+</div>
 
 <!--Hébergement à Marseille-->
 <div class="hebergement" id="ancrehebergement"> 
-<p class="titre2">Hébergement à Marseille</p>
+<h2>Hébergement à Marseille</h2>
     <div class="blocheb1">
         <div class="blocheb">
             <img class="imgheber" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo d'auberge">
             <div class="bloctextheb" >
-                <p class="hebtext">Auberge la Cannebière</p>
+                <h3 class="hebtext">Auberge la Cannebière</h3>
                 <p class="prixheb">Nuit à partir de 25<span class="euro">€</span></p>
                 <div class="etoiles">
                     <ul class="ulheb">
@@ -145,7 +148,7 @@
         <div class="blocheb">
             <img class="imgheber" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo de chambre d'hôtel">
             <div class="bloctextheb" >
-                <p class="hebtext">Hôtel du port</p>
+                <h3 class="hebtext">Hôtel du port</h3>
                 <p class="prixheb">Nuit à partir de 52<span class="euro">€</span></p>
                 <div class="etoiles">
                     <ul class="ulheb">
@@ -162,7 +165,7 @@
         <div class="blocheb">
             <img class="imgheber" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo de chambre d'hôtel">
             <div class="bloctextheb" >
-                <p class="hebtext">Hôtel Les mouettes</p>
+                <h3 class="hebtext">Hôtel Les mouettes</h3>
                 <p class="prixheb">Nuit à partir de 76<span class="euro">€</span></p>
                 <div class="etoiles">
                     <ul class="ulheb">
@@ -180,7 +183,7 @@
         <div class="blocheb">
         <img class="imgheber" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo chambre d'hôtel">
         <div class="bloctextheb" >
-            <p class="hebtext">Hôtel de la mer</p>
+            <h3 class="hebtext">Hôtel de la mer</h3>
             <p class="prixheb">Nuit à partir de 46<span class="euro">€</span></p>
             <div class="etoiles">
                 <ul class="ulheb">
@@ -197,7 +200,7 @@
     <div class="blocheb">
         <img class="imgheber" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de chambre d'hôtel">
         <div class="bloctextheb" >
-            <p class="hebtext">Auberge Le Panier</p>
+            <h3 class="hebtext">Auberge Le Panier<h3p>
             <p class="prixheb">Nuit à partir de 23<span class="euro">€</span></p>
             <div class="etoiles">
                 <ul class="ulheb">
@@ -214,7 +217,7 @@
     <div class="blocheb">
         <img class="imgheber" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo de chambre d'hôtel">
         <div class="bloctextheb" >
-            <p class="hebtext">Hôtel chez Amina</p>
+            <h3 class="hebtext">Hôtel chez Amina</h3>
             <p class="prixheb">Nuit à partir de 96<span class="euro">€</span></p>
             <div class="etoiles">
                 <ul class="ulheb">
@@ -231,13 +234,12 @@
 
 <h2 class="txttitre2">Afficher plus</h2>
 </div>
-
 </section>
 
-<!--Activité-->
+<!--Activités-->
 <section class="activitephoto" id="ancreactivite">
-<h2 class="txttitreactiv">Activité à Marseille</h2>
-<div class="imageactivite">
+<h2 class="txttitreactiv">Activités à Marseille</h2>
+<div class="imgactivite">
     <div class="blocactivite">
             <div class="activite">
                 <img class="imgactiv imgactivite14" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo de Vieux port à Marseille">
@@ -273,7 +275,7 @@
 </div>
 </section>
 
-<!--footer-->
+<!--Footer-->
 <footer>
     <div class="footer">
         <div class="footer1">
