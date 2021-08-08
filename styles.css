@@ -1,37 +1,56 @@
+<<<<<<< Updated upstream
 /* Mobile First----0808 a revoir les finitions----iphone8 375px-----*/
+=======
+/* Mobile First----0808 a refaire desktop hebergement----iphone8 375px-----*/
+>>>>>>> Stashed changes
 body{
     font-family: "Raleway", "sans serif";
     margin: 0px;
 }
 /*Parametre de text*/
 .h1titre{
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 22px;
+    font-weight: bolder;
     }
 .h2titre{
-    font-size: 16px;
-    font-weight: 900 !important;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 15px;
+}
+.h2titrePop{
+    font-size: 18px;
+    font-weight: 800;
 }
 .h3titre{
     font-size: 14px;
-    font-weight: 900;
-    padding-right: 50px;
+    font-weight: bolder;
+    padding-right: 40px;
+}
+h4{
+    margin: 0px 0px 0px 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    width: 80%;
 }
 p{
-    font-weight: 300;
+    font-weight: 400;
 }
 a{
     text-decoration: none;
     color: black;
 }
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
 /*Header*/
 header{ 
+    width: 100%;
     display: grid;
     grid-template: "topLeft  topRight" 120px
                     "bottom  bottom" 40px;
 } 
 .logo{
-    width: 45%;
     grid-area: topLeft;
     padding-left: 20px;
     padding-top: 30px;
@@ -44,10 +63,10 @@ header{
     justify-content: space-around;
 }
 .menu-item{
+    width: 100%;
     text-decoration: none;
     color: black;
-    font-weight: bolder;
-    width: 50%;
+    font-weight: 500;
     border-bottom: #F2F2F2 3px solid;
 }
 .menu-item:hover{
@@ -55,30 +74,29 @@ header{
     color:  #0065FC;
 }
 .inscription{
-    
     grid-area: topRight;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-top: 50px;
     text-align: right;
 }
 #inscriptionLien{
     text-decoration: none;
     color: #0065FC;
-    font-weight: 900;
+    font-weight: bolder;
 }
 /*Trouver votre hébergement*/
 .trouverhebergement{
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 .formulaire{
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
+    justify-content:start;
     align-items: stretch;
     height: 50px;
     width: 335px;
     padding-top: 30px;
-    margin-bottom: 50px;
+    padding-left: 15px;
+    margin-bottom: 40px;
 }
 #map{
     display: flex;
@@ -102,12 +120,12 @@ header{
 }
 input::placeholder{
     color: black;
-    font-weight: 900;
+    font-weight: 800;
 }
 .intrechercher{
     font-family: raleway;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 200;
     color: black;
 }
 #iconrecher{
@@ -127,11 +145,22 @@ input::placeholder{
 }
 .textrecher{
     display: none;
+    justify-content:start;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    height: 50px;
+    width: 135px;
+    background-color: #0065fc;
+    border-radius: 0px 20px 20px 0px;
+    padding-left: 20px;
+    letter-spacing:0.5mm;
 }
 /*Filtres*/
-.ecofam{
-    display: flex;
-    flex-direction: row;
+.h2titrefiltres{
+    padding-left: 15px;
+    font-size: 16px;
 }
 .filter{
     width: fit-content;
@@ -143,95 +172,88 @@ input::placeholder{
     border-left: #DEEBFF;
     border-radius: 25px;
     height: 38px;
-    margin-bottom: 15px;
+    margin:0 5px 15px 10px;
     padding-right: 5px;
-    margin-right: 5px;
-    margin-left: 10px;
-}
-.h-icone{
+    }
+.filtresicone{
     width: 40px;
     height: 40px;
     display: flex; 
     justify-content: center;
     align-items: center;
     color: #0065FC;
-    background-color: #DEEBFF ;
+    background-color: #DEEBFF;
     border-radius: 100%;
 }
-.h-text{
+.filtrestext{
     font-size: 14px;
-    font-weight: 900;
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    font-weight: bolder;
+    padding: 0 20px 0 10px;
+    margin: 0px;
     text-decoration: none;
     color: black;
 }
-.h-icone:hover{
+.filtresicone:hover{
     background-color: teal;
     color: white;
 }
 /*Information*/
 #info{
+    width: 95%;
     display: flex;
     align-items: flex-start;
-    padding-top: 30px;
-    padding-right: 10px;
+    padding: 30px 10px 0 0;
 }
-#iconeinfo{
+#infoicone{
+    width: 20px;
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align:start;
-    width: 20px;
-    height: 20px;
     color: #0065FC;
     border-radius: 100%;
     border: #F2F2F2 solid 1px;
-    margin-right: 5px;
 }
-#textinfo{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 40px;
+#infotext{
+    margin: 0px;
+    padding: 0 0 40px 10px;
 }
 /*Les plus populaires*/
-.pluspop{
+.BlocPlusPopulaire{
+    width: 95%;
     background-color: #F2F2F2;
-    padding: 10px;
-    
+    padding: 5px 10px 10px 10px;
 }
-.pop{
+.TitrePopulaire{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding-right: 20px;
+    padding: 10px 20px 20px 0px;
 }
-.blocPopResponsive{
+.BlocPopResponsive{
     display: flex;
     flex-direction: column;
 }
-.blocpop{
-    width: 98%;
+.BlocPop{
+    width: 93%;
     height: 145px;
     background-color: white;
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    padding: 3px;
+    padding: 2px;
     margin-bottom: 10px;
-    box-shadow: 5px 5px 5px 3px #F2F2F2;
+    box-shadow: 3px 3px 3px 1px #F2F2F2;
 }
-.blocpop:hover{
+.BlocPop:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
 .imgpop{
     width: 40%;
-    padding: 3px;
+    padding: 2px;
     border-radius: 25px 0 0 25px  ;
     object-fit: cover;
 }
@@ -243,15 +265,11 @@ input::placeholder{
     text-align: left;
 }
 .ulpop{
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
     justify-content: left;
     text-align: left;
-    padding-left: 0px;
     list-style: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
+    padding: 30px 0 0 0;
     letter-spacing: 2px;
 }
 .prixheb{
@@ -265,15 +283,14 @@ input::placeholder{
     margin-top: 0px;
 }
 .euro{
-    font-weight: 900;
+    font-weight: 700;
 }
 .hebtext{
     font-size: 14px;
-    font-weight: 900;
-    padding-right: 20px;
+    font-weight: bolder;
+    padding: 0 20px 0 0;
     margin-bottom: 0px;
-    padding-left: 0px;
-}
+ }
 .etoilespop{
    padding-left:0px;
 }
@@ -282,26 +299,33 @@ input::placeholder{
 }
 /*Hébergement à Marseille*/
 .hebergement{
-    padding: 20px 25px 20px 20px;
+    padding: 25px 40px 20px 5px;
 }
-.blocheb{
-    width:100%;
+.h2titre{
+    margin-bottom: 0px;
+    width: 80%;
+}
+.BlocHebergement{
+    width:98%;
     height: 230px;
-    background-color: white;
-    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin: 0px 10px 10px 5px;
+    background-color: white;
+    border-radius: 25px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
 }
-.blocheb:hover{
+.BlocHebergement:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
+.blocheb1{
+    margin-top: 20px;
+}
 .imgheber{
-    width: 94%;
+    width: 97%;
     height:60%;
-    padding: 5px;
+    padding: 3px;
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
@@ -314,34 +338,30 @@ input::placeholder{
 }
 .ulheb{
     height: 14px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    text-align: left;
-    padding-left: 0px;
-    list-style: none;
     margin-top: -2px;
-    margin-bottom: 0px;
+    padding-top: 0px;
+    letter-spacing: 0px; 
 }
 /*Activités*/
-.activitephoto{
-    margin-left: 20px;
+.BlocActivites{
+    padding-left: 15px;
 }
 .imgactivite{
+    width: 96%;
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
 }
 .activite{
-    width:98%;
+    width:95%;
     height: 190px;
-    background-color:white;
-    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-items: center;
+    background-color:white;
+    border-radius: 25px;
     margin-bottom: 20px;
-    box-shadow: 3px 3px 3px 1px #F2F2F2;
+    box-shadow: 2px 2px 2px 1px #F2F2F2;
 }
 .activite:hover{
     cursor: pointer;
@@ -349,17 +369,15 @@ input::placeholder{
 }
 .imgactiv{
     height:136px;
-    
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
 .activtext{
     font-size: 14px;
-    font-weight: 900;
-    padding-right: 20px;
-    margin-top:20px;
-    margin-bottom: 0px;
-    padding-left: 20px;
+    font-weight: 800;
+    text-align: inherit;
+    padding: 0 0 0 20px;
+    margin:20px 0 0 0;  
 }
 /*Footer*/
 .footer{
@@ -367,19 +385,18 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     justify-content:stretch; 
-    padding-left: 30px;   
-    padding-right: 15%;  
+    padding: 0 15px 0 30px;    
 }
-.footerh2{
+.h2footer{
     font-size: 15px;
-    font-weight: 900;
+    font-weight: bolder;
     padding-top: 15px;
 }
 .pfooter{
+    height: 30px;
     font-size: 13px;
     text-decoration: none;
     color: black;
-    height: 30px;
 }  
 .footer1, .footer2, .footer3{
     display: flex;
@@ -390,8 +407,7 @@ input::placeholder{
 @media screen and (min-width: 800px) {
 /*header*/
 header{
-    width: 100%;
-    grid-template: "topLeft top top topRight" 13% / auto 25% 25% 13%;
+        grid-template: "topLeft top top topRight" 15% / auto 20% 20% 15%;
 }
 .menu{
    grid-area: top;
@@ -406,105 +422,66 @@ header{
     color:  #0065FC;
 }
 #inscriptionLien{
-    padding-right: 80px;
+    padding-right: 10px;
 }
 .inscription{
-    padding-top:53px;
+    padding-top:53px;  
 }
 .logo{
-    padding-left: 55px;
-}
-/*Formulaire*/
-.formulaire{
-    width: 420px;
-    padding-top: 20px;
-    margin-bottom: 50px;
+    padding-left: 25px; 
 }
 /*Trouver votre hébergement*/
 .trouverhebergement{
-    margin-left: 30px;
+    padding-left: 30px;
 }
 /*Formulaire rechercher*/
+.formulaire{
+    width: 420px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
 #iconrecher{
     display: none;
 }
 .textrecher{
     display: flex;
-    justify-content:start;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-weight: 800;
-    height: 50px;
-    width: 135px;
-    background-color: #0065fc;
-    border-radius: 0px 20px 20px 0px;
-    padding-left: 20px;
-    letter-spacing:0.5mm;
 }
 /*Filtre*/
-#filtres, .romanimaux{
+#filtres{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+}
+.filtrestext{
+    padding-right: 5px;
+}
+.RomEtAnimaux{
     display: flex;
     flex-direction: row;
 }
-
+#info{
+    padding-top: 20px;
+}
 /*Hébergement et Les plus populaire*/
-/*Hébergement*/
-.hebetpop{
+.HebEtPop{
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content:flex-end;
     align-items:flex-start;
     text-align:left;
-    margin-bottom: 50px;
-    margin-left:10px;
+    margin: 0 0 40px 5px;
 }
+/*Hébergement*/
 .hebergement{
-    width: 65%;
+    flex: 70%;
     height: 600px;
-    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background-color: #F2F2F2;
     border-radius: 25px;
-    margin-right: 10px;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-.blocheb1, .blocheb2{
-    width:98%;
-    height: 200px;
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 0px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-.blocheb1{
-    margin-top: 0px;
-}
-.blocheb{
-    width: 34%;
-    margin-right: 10px;
-}
-.bloctextheb{
-    padding-left: 15px;
-}
-.pop{
-    padding-bottom: 15px;
-    padding-right: 0px;
-}
-.pluspop{
-    width: 30%;
-    border-radius: 25px;
-    height: 600px;
-    margin-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;  
+    padding: 20px 0px 0px 5px;
 }
 .titreheb{
     margin-bottom: 5px;
@@ -512,136 +489,192 @@ header{
 }
 .hebtext{
     padding-right: 0px;
+    margin-top: 0px;
+}
+.blocheb1, .blocheb2{
+    width:100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0 10px 20px 0;
+}
+.blocheb1{
+    margin: 0px 0 10px 0;
+}
+.BlocHebergement{
+    width: 100%;
+    height: 210px;
+    margin: 15px 7px 0px 0px;
+}
+.bloctextheb{
+    padding: 5px 0 0 10px;
 }
 /*Les plus populaires*/
+.TitrePopulaire{
+   padding: 20px 20px 0 5px;
+}
+.BlocPlusPopulaire{
+    width:28%;
+    height: 600px;
+    border-radius: 25px;
+    margin: 0 5px 0 5px;
+    padding: 0 0 20px 5px;
+}
+.BlocPop{
+    width: 95%;
+    margin-bottom: 30px;
+}
 .bloctext{
     padding-left: 5px;
     }
 .h3titre{
     padding-right: 0px;
 }
-.blocpop{
-        margin-bottom: 25px;
-}
-.hebtext{
-    margin-top: 0px;
-}
 .etoilespop{
     padding-top: 0px;
+}
+.prixpoptablette{
+    margin-bottom: 0px;
 }
 /*Activités*/
 .txttitreactiv{
     padding-left: 10px;
 }
-.activitephoto{
-   margin-bottom: 55px;   
+.BlocActivites{
+   margin-bottom: 25px;  
+   padding-left: 5px; 
 }
 .activtext{
+    font-size: 12px;
     margin-bottom: 15px;
+    padding-left: 15px;   
 }
 .imgactivite{
+    width: 100%;
     height: 445px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.activiteResponsive{
-width: 23%;
-justify-content: space-between;
-}
 .activite{
-    height: auto;
-    margin-bottom: 0px;
-    border-radius: 25px;
+    width: 100%;
+    height: 100%;
 }
 .activitedesktop{
-    height: auto;
-    width: 23%;
+   width: 24%;
+    height: 97%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .imgactivite14{
-    height: 88%;
+   height: 350px;
 }
 .imgactivite2{
-   height: 180px;
+    height: 180px;
 }
 .imgactivite3{
-   height: 115px;
-}
-.imgactivite56{
-    height: 145px;
+    height: 100px;
 }
 /*Footer*/
 .footer{
+    width: 95%;
     flex-direction: row;
-    width: auto;
 }
-.footer1,.footer2, .footer3{
-    width: 33%;
-    margin-right: 55px;
+.footer1{
+    width: 40%;
+}
+.footer2, .footer3{
+    width: 30%;
 }
 }
-/*---------tablette--------*/
+/*------------------tablette----------------*/
 @media screen and (min-width: 600px) and (max-width: 799px) {
-.ecofam, .romanimaux{
+/*Titre*/
+.h1titre{
+    font-size: 19px;
+}
+/*Filtres*/
+.RomEtAnimaux{
     display: flex;
     flex-direction: row;
 }
 #romantique{
     margin-right: 20px;
 }
-.blocPopResponsive{
+/*Formulaire*/
+.formulaire{
+    width: 420px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+#iconrecher{
+    display: none;
+}
+.textrecher{
+    display: flex;
+}
+/*Les plus populaires*/
+.iconechart{
+    padding-right: 15px;
+}
+.BlocPopResponsive{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
-.blocpop{
-    width: 200px;
+.BlocPlusPopulaire{
+    width: 98%;
+    padding: 0 5px 0 5px;
+    margin: 0px;
+}
+.BlocPop{
+    margin: 0 5px 0 5px;
 }
 .imgpop{
-    width: 75px;
-}
-h3{
-    padding-right: 0px;
+    width: 40%;
 }
 .bloctext{
     padding-left: 5px;
 }
-.pop{
-    width: 100%;
-    justify-content: space-between;
-    padding-right: 50px;
+.prixpoptablette{
+    margin-bottom: 0px;
+}
+.ulpop{
+    padding-top: 10px;
+}
+/*Hébergement*/
+.hebergement{
+    padding: 0 5px 0 5px;
+}
+.h3titre, .hebtext{
+    font-size: 12px;
+    padding-right:0px;
 }
 .blocheb1, .blocheb2{
+    width: 100%;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
+}
+.prixheb{
+    margin-bottom: 0px;
 }
 .blocheb{
-    width: 75%;
-    padding-right: 10px;
+    width: 30%;
+    padding: 1px;
 }
-.activitedesktop{
-    display: flex;
-    flex-direction: row;
-}
-.blocactivite{
-    display: flex;
-    flex-direction: row;
-}
-.activite{
-    width: 200px;
-    margin-right: 30px;
-}
+/*Footer*/
 .footer{
-    display: flex;
+    width: 93%;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-right: 30px;
+}
+.footer1{
+    width: 40%;
+}
+.footer2, .footer3{
+    width: 30%;
 }
 }
-
-
