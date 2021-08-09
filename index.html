@@ -30,53 +30,58 @@
 <div class="trouverhebergement">
     <h1 class="h1titre">Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
-      
+
+    <!--Formulaire-->  
     <form class="formulaire flexrow" method="GET">
         <i id="map" class="fas fa-map-marker-alt fa 1x"></i> 
         <input id="rechercher" class="intrechercher" type="search" placeholder="Marseille, France"/>
         <a href="#"><i id="iconrecher" class="fas fa-search fa-1x"></i><span class="textrecher">Rechercher</span></a>
-    </form>     
-<!--Filtres-->
+    </form>
+
+    <!--Filtres-->
     <div id="filtres">
         <h2 class="h2titrefiltres">Filtres</h2>
-            <div class="flexrow">
-                <div class="filter" id="economique">
-                    <div class="filtresicone"><i class="fas fa-money-bill-wave fa-1x"></i></div>
+            
+                <div class="flexrow">
+            <div id="economique " class="filter">
+                    <div class="filtresicone flexcenter"><i class="fas fa-money-bill-wave fa-1x"></i></div>
                     <a href="#" class="filtrestext">Économique</a>
-                </div>
-            <div class="filter" id="familial">
-                    <div class="filtresicone"><i class="fas fa-child fa-1x"></i></div>
-                    <a href="#" class="filtrestext">Familial</a>
-                </div>
             </div>
-            <div class="RomEtAnimaux">
-            <div class="filter" id="romantique">
-                <div class="filtresicone"><i class="fas fa-heart fa-1x"></i></div>
+            <div id="familial" class="filter">
+                    <div class="filtresicone flexcenter"><i class="fas fa-child fa-1x"></i></div>
+                    <a href="#" class="filtrestext">Familial</a>
+            </div>
+                </div>
+                <div class="RomEtAnimaux">
+            <div id="romantique" class="filter">
+                <div class="filtresicone flexcenter"><i class="fas fa-heart fa-1x"></i></div>
                 <a href="#" class="filtrestext">Romantique</a>
             </div>
-            <div class="filter" id="animaux">
-                <div class="filtresicone"><i class="fas fa-dog fa-1x"></i></div>
+            <div id="animaux" class="filter">
+                <div class="filtresicone flexcenter"><i class="fas fa-dog fa-1x"></i></div>
                 <a href="#" class="filtrestext">Animaux autorisés</a>
             </div>
-            </div>
+                </div>
     </div>
 
-  <!--Information-->
+    <!--Information-->
     <div id="info">
-        <i id="infoicone" class="fas fa-info fa-xs"></i><p id=infotext>Plus de 500 logements sont disponibles dans cette ville</p>
+        <i id="infoicone" class="fas fa-info fa-xs"></i>
+        <p id=infotext>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
 </div> 
 
 <!--Les plus populaires-->
 <aside class="HebEtPop">
 <div class="BlocPlusPopulaire">
-    <div class="TitrePopulaire flexrow">
+    <div class="TitrePopulaire">
         <h2 class="h2titrePop">Les plus populaires</h2>
         <div class=iconechart><i class="fas fa-chart-line fa-2x font-weight:900"></i></div>
     </div>
-  <div class="BlocPopResponsive">
+
+    <div class="BlocPopResponsive">
         <a href="#" class="BlocPop">
-        <img class="imgpop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de chambre"/>
+        <img class="imgpop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de chambre d'hotel"/>
         <div class="bloctext">
             <h3 class="h3titre">Hôtel Le soleil du matin</h3>
             <p class="prixpop">Nuit à partir de 128<span class="euro">€</span></p>
@@ -92,7 +97,7 @@
         </div> 
     </a>
     <a href="#" class="BlocPop">
-        <img class="imgpop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de chambre"/>
+        <img class="imgpop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de chambre d'hotel"/>
         <div class="bloctext">
             <h3 class="h3titre">Au coeur de l'eau Chambres d'hôtes</h3>
             <p class="prixpop prixpoptablette">Nuit à partir de 71<span class="euro">€</span></p>
@@ -108,7 +113,7 @@
         </div> 
     </a>
     <a href="#" class="BlocPop">
-        <img class="imgpop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de chambre"/>
+        <img class="imgpop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de chambre d'hotel"/>
         <div class="bloctext">
             <h3 class="h3titre">Hôtel Tout bleu et Blanc</h3>
             <p class="prixpop">Nuit à partir de 68<span class="euro">€</span></p>
@@ -129,9 +134,10 @@
 <!--Hébergement à Marseille-->
 <div class="hebergement" id="ancrehebergement"> 
 <h2 class="h2titre">Hébergements à Marseille</h2>
+    
     <div class="blocheb1">
         <div class="BlocHebergement">
-            <img class="imgheber" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo d'auberge">
+            <img class="imgheber" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo de chambre d'auberge avec le lit superpose">
             <div class="bloctextheb" >
                 <h3 class="hebtext">Auberge la Cannebière</h3>
                 <p class="prixheb">Nuit à partir de <span class="euro">25€</span></p>
@@ -181,6 +187,7 @@
             </div>   
         </div>
     </div>
+
     <div class="blocheb2">
         <div class="BlocHebergement">
         <img class="imgheber" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo chambre d'hôtel">
@@ -200,7 +207,7 @@
     </div>
 
     <div class="BlocHebergement">
-        <img class="imgheber" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de chambre d'hôtel">
+        <img class="imgheber" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de chambre d'auberge avec lit superpose">
         <div class="bloctextheb" >
             <h3 class="hebtext">Auberge Le Panier</h3>
             <p class="prixheb">Nuit à partir de <span class="euro">23€</span></p>
@@ -241,38 +248,40 @@
 <!--Activités-->
 <section class="BlocActivites" id="ancreactivite">
 <h2 class="txttitreactiv">Activités à Marseille</h2>
+
 <div class="imgactivite">
     <div class="activitedesktop">
-    <div class="activite">
+        <div class="activite">
                 <img class="imgactiv imgactivite14" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo de Vieux port à Marseille">
                 <p class="activtext">Vieux Port</p>       
-    </div></div>
-        <div class="activitedesktop">
-    <div class="activite">
+        </div>
+    </div>
+    <div class="activitedesktop">
+        <div class="activite">
                 <img class="imgactiv imgactivite2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo de Fort au bord de la mer">
                 <p class="activtext">Fort de Pomègues</p>   
-    </div>
-    <div class="activite">
+        </div>
+        <div class="activite">
                 <img class="imgactiv imgactivite3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo des Iles">
                 <p class="activtext">Îles du Frioul</p>  
-    </div>
         </div>
-        <div class="activitedesktop">    
-    <div class="activite">
-                <img class="imgactiv imgactivite14" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo de paysage">
+    </div>
+    <div class="activitedesktop">    
+        <div class="activite">
+                <img class="imgactiv imgactivite14" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo de paysage, vue sur la mer">
                 <p class="activtext">Parc National des Calanques</p>
-    </div></div>
-            <div class="activitedesktop ">
-    <div class="activite">
-                <img class="imgactiv" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de paysage avec l'eglise">
+        </div>
+    </div>
+    <div class="activitedesktop">
+        <div class="activite">
+                <img class="imgactiv" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de paysage avec l'élise en arrière">
                 <p class="activtext">Notre-Dame-de-la-Garde</p>
     </div>
-    <div class="activite">
+            <div class="activite">
                 <img class="imgactiv" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo de parc">
                 <p class="activtext">Parc Longchamp</p>
-    </div>
             </div>
-    
+    </div>
 </div>
 </section>
 

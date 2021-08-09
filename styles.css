@@ -1,4 +1,5 @@
-/*zadna zmena, footer je ok*/
+/*correction css padding*/
+/* Mobil first*/
 body{
     font-family: "Raleway", "sans serif";
     margin: 0px;
@@ -39,6 +40,14 @@ a{
     display: flex;
     flex-direction: row;
 }
+.flexcenter{
+    display: flex; 
+    justify-content: center;
+}
+.flexcolumn{
+    display: flex; 
+    justify-content:column;
+}
 /*Header*/
 header{ 
     width: 100%;
@@ -52,15 +61,14 @@ header{
     padding-top: 30px;
 }
 .menu{
+    grid-area: bottom;
     width: 100%;
     text-align: center;
-    grid-area: bottom;
     display: flex;
     justify-content: space-around;
 }
 .menu-item{
     width: 100%;
-    text-decoration: none;
     color: black;
     font-weight: 500;
     border-bottom: #F2F2F2 3px solid;
@@ -71,36 +79,32 @@ header{
 }
 .inscription{
     grid-area: topRight;
-    padding-right: 30px;
-    padding-top: 50px;
+    padding: 50px 30px 0 0;
     text-align: right;
 }
 #inscriptionLien{
-    text-decoration: none;
     color: #0065FC;
     font-weight: bolder;
 }
 /*Trouver votre hébergement*/
 .trouverhebergement{
-    padding-left: 10px;
-    padding-right: 20px;
+    padding: 0 20px 0 10px;
 }
 .formulaire{
+    width: 335px;
+    height: 50px;
     justify-content:start;
     align-items: stretch;
-    height: 50px;
-    width: 335px;
-    padding-top: 30px;
-    padding-left: 15px;
+    padding: 30px 0 0 15px;
     margin-bottom: 40px;
 }
 #map{
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50px;
-    width: 50px;
     background-color: #F2F2F2;
     border-radius: 20px 0 0 20px;  
 }
@@ -125,13 +129,13 @@ input::placeholder{
     color: black;
 }
 #iconrecher{
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    height: 50px;
-    width: 50px;
     background-color: #0065fc;
     border-radius: 20px 20px 20px 20px;
 }
@@ -141,13 +145,13 @@ input::placeholder{
 }
 .textrecher{
     display: none;
+    width: 135px;
+    height: 50px;
     justify-content:start;
     align-items: center;
     text-align: center;
     color: white;
     font-weight: 800;
-    height: 50px;
-    width: 135px;
     background-color: #0065fc;
     border-radius: 0px 20px 20px 0px;
     padding-left: 20px;
@@ -160,6 +164,7 @@ input::placeholder{
 }
 .filter{
     width: fit-content;
+    height: 38px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -167,15 +172,12 @@ input::placeholder{
     border: #F2F2F2 solid 2px;
     border-left: #DEEBFF;
     border-radius: 25px;
-    height: 38px;
     margin:0 5px 15px 10px;
     padding-right: 5px;
     }
 .filtresicone{
     width: 40px;
     height: 40px;
-    display: flex; 
-    justify-content: center;
     align-items: center;
     color: #0065FC;
     background-color: #DEEBFF;
@@ -219,7 +221,7 @@ input::placeholder{
 .BlocPlusPopulaire{
     width: 95%;
     background-color: #F2F2F2;
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 10px 20px;
 }
 .TitrePopulaire{
     display: flex;
@@ -235,10 +237,10 @@ input::placeholder{
 .BlocPop{
     width: 93%;
     height: 145px;
-    background-color: white;
-    border-radius: 25px;
     display: flex;
     flex-direction: row;
+    background-color: white;
+    border-radius: 25px;
     padding: 2px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
@@ -255,10 +257,8 @@ input::placeholder{
 }
 .bloctext{
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
     text-align: left;
+    padding-left: 20px;
 }
 .ulpop{
     justify-content: left;
@@ -295,7 +295,7 @@ input::placeholder{
 }
 /*Hébergement à Marseille*/
 .hebergement{
-    padding: 25px 40px 20px 5px;
+    padding: 25px 40px 20px 15px;
 }
 .h2titre{
     margin-bottom: 0px;
@@ -327,8 +327,6 @@ input::placeholder{
 }
 .bloctextheb{
     width: 90%;
-    display: flex;
-    flex-direction: column;
     text-align: left;
     padding-left: 20px;
 }
@@ -340,12 +338,10 @@ input::placeholder{
 }
 /*Activités*/
 .BlocActivites{
-    padding-left: 15px;
+    padding-left: 25px;
 }
 .imgactivite{
     width: 96%;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 10px;
 }
 .activite{
@@ -377,10 +373,10 @@ input::placeholder{
 }
 /*Footer*/
 .footer{
-    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content:stretch; 
+    justify-content:stretch;
+    background-color: #F2F2F2;
     padding: 0 15px 0 30px;    
 }
 .h2footer{
@@ -400,7 +396,7 @@ input::placeholder{
     justify-content: flex-start;
 }
 /*------------ desktop-----------------*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 820px) {
 /*header*/
 header{
         grid-template: "topLeft top top topRight" 15% / auto 20% 20% 15%;
@@ -508,7 +504,8 @@ header{
 }
 /*Les plus populaires*/
 .TitrePopulaire{
-   padding: 20px 20px 0 5px;
+   padding: 20px 15px 0 5px;
+   font-size: 18px
 }
 .BlocPlusPopulaire{
     width:28%;
@@ -579,14 +576,14 @@ header{
     flex-direction: row;
 }
 .footer1{
-    width: 40%;
+    width: 38%;
 }
 .footer2, .footer3{
-    width: 30%;
+    width: 32%;
 }
 }
 /*------------------tablette----------------*/
-@media screen and (min-width: 600px) and (max-width: 799px) {
+@media screen and (min-width: 600px) and (max-width: 819px) {
 /*Titre*/
 .h1titre{
     font-size: 19px;
@@ -612,6 +609,9 @@ header{
     display: flex;
 }
 /*Les plus populaires*/
+.TitrePopulaire{
+    padding-left: 15px;
+}
 .iconechart{
     padding-right: 15px;
 }
@@ -622,8 +622,8 @@ header{
 }
 .BlocPlusPopulaire{
     width: 98%;
-    padding: 0 5px 0 5px;
-    margin: 0px;
+    padding: 0 5px 25px 5px;
+    margin: 0;
 }
 .BlocPop{
     margin: 0 5px 0 5px;
@@ -642,7 +642,9 @@ header{
 }
 /*Hébergement*/
 .hebergement{
-    padding: 0 5px 0 5px;
+    padding: 15px 5px 30px  5px;
+    margin-top: 30px;
+    background-color: #F2F2F2;
 }
 .h3titre, .hebtext{
     font-size: 12px;
@@ -662,6 +664,9 @@ header{
     width: 30%;
     padding: 1px;
 }
+h4{
+    padding-left: 50px;
+}
 /*Footer*/
 .footer{
     width: 93%;
@@ -672,5 +677,8 @@ header{
 }
 .footer2, .footer3{
     width: 30%;
+}
+.footer3{
+    padding-left: 30px;
 }
 }
