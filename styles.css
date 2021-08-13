@@ -1,33 +1,32 @@
-/*correction css padding*/
+/*version 13082021*/
 /* Mobil first*/
 body{
-    font-family: "Raleway", "sans serif";
+    font-family: "Raleway", sans serif;
     margin: 0px;
 }
-/*Parametre de text*/
+/*Parametre de texte*/
 .h1titre{
     font-size: 22px;
     font-weight: bolder;
     }
 .h2titre{
-    font-size: 18px;
-    font-weight: 800;
-    padding-left: 15px;
-}
-.h2titrePop{
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: bolder;
+    }
+.h2titreactiv{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 .h3titre{
     font-size: 14px;
+    height: 32px;
     font-weight: bolder;
-    padding-right: 40px;
+    margin-top: 20px;
 }
 h4{
-    margin: 0px 0px 0px 0px;
-    padding-left: 10px;
-    padding-top: 20px;
-    width: 80%;
+   margin-top: 30px;
+    margin-bottom: 0px;
 }
 p{
     font-weight: 400;
@@ -46,12 +45,13 @@ a{
 }
 .flexcolumn{
     display: flex; 
-    justify-content:column;
+    flex-direction:column;
 }
 /*Header*/
 header{ 
     width: 100%;
     display: grid;
+    font-weight: bolder;
     grid-template: "topLeft  topRight" 120px
                     "bottom  bottom" 40px;
 } 
@@ -70,7 +70,6 @@ header{
 .menu-item{
     width: 100%;
     color: black;
-    font-weight: 500;
     border-bottom: #F2F2F2 3px solid;
 }
 .menu-item:hover{
@@ -88,14 +87,13 @@ header{
 }
 /*Trouver votre hébergement*/
 .trouverhebergement{
-    padding: 0 20px 0 10px;
+    padding: 0 20px 0 20px;
 }
 .formulaire{
     width: 335px;
     height: 50px;
     justify-content:start;
     align-items: stretch;
-    padding: 30px 0 0 15px;
     margin-bottom: 40px;
 }
 #map{
@@ -147,20 +145,21 @@ input::placeholder{
     display: none;
     width: 135px;
     height: 50px;
+    font-family: "raleway";
     justify-content:start;
     align-items: center;
     text-align: center;
     color: white;
-    font-weight: 800;
+    font-weight: 600;
     background-color: #0065fc;
     border-radius: 0px 20px 20px 0px;
     padding-left: 20px;
-    letter-spacing:0.5mm;
+    letter-spacing:0.3mm;
 }
 /*Filtres*/
 .h2titrefiltres{
-    padding-left: 15px;
     font-size: 16px;
+    padding-right: 20px;
 }
 .filter{
     width: fit-content;
@@ -197,10 +196,9 @@ input::placeholder{
 }
 /*Information*/
 #info{
-    width: 95%;
     display: flex;
     align-items: flex-start;
-    padding: 30px 10px 0 0;
+    padding-top: 30px;
 }
 #infoicone{
     width: 20px;
@@ -219,29 +217,25 @@ input::placeholder{
 }
 /*Les plus populaires*/
 .BlocPlusPopulaire{
-    width: 95%;
     background-color: #F2F2F2;
-    padding: 5px 10px 10px 20px;
+    padding: 20px 20px 20px 20px; 
+    justify-content: space-between;
 }
 .TitrePopulaire{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    padding: 10px 20px 20px 0px;
+    align-items: flex-end;
+    padding-bottom: 20px;
 }
 .BlocPopResponsive{
     display: flex;
     flex-direction: column;
 }
 .BlocPop{
-    width: 93%;
     height: 145px;
     display: flex;
-    flex-direction: row;
     background-color: white;
     border-radius: 25px;
-    padding: 2px;
     margin-bottom: 10px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
 }
@@ -251,27 +245,27 @@ input::placeholder{
 }
 .imgpop{
     width: 40%;
-    padding: 2px;
+    padding: 5px;
     border-radius: 25px 0 0 25px  ;
     object-fit: cover;
 }
 .bloctext{
     width: 60%;
-    text-align: left;
     padding-left: 20px;
+    padding-right: 20px;
 }
 .ulpop{
     justify-content: left;
     text-align: left;
     list-style: none;
     margin: 0px;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
     letter-spacing: 2px;
 }
 .prixheb{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 200;
-    margin-top: 5px;
+    margin: 5px 0 5px 0;
 }
 .prixpop{
     font-size: 12px;
@@ -282,9 +276,9 @@ input::placeholder{
     font-weight: 700;
 }
 .hebtext{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bolder;
-    padding: 0 20px 0 0;
+    margin-top: 3px;
     margin-bottom: 0px;
  }
 .etoilespop{
@@ -295,38 +289,32 @@ input::placeholder{
 }
 /*Hébergement à Marseille*/
 .hebergement{
-    padding: 25px 40px 20px 15px;
+    padding: 20px 20px 20px 20px;
 }
 .h2titre{
     margin-bottom: 0px;
-    width: 80%;
 }
 .BlocHebergement{
-    width:98%;
-    height: 230px;
+    width: 100%;
+    height: 220px;
     display: flex;
     flex-direction: column;
-    margin: 0px 10px 10px 5px;
+    margin: 15px 0px 15px 0px;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 3px 3px 3px 1px #F2F2F2;
+    box-shadow: 3px 3px 10px 1px #F2F2F2;
 }
 .BlocHebergement:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
-.blocheb1{
-    margin-top: 20px;
-}
 .imgheber{
-    width: 97%;
     height:60%;
-    padding: 3px;
+    padding: 5px;
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
 .bloctextheb{
-    width: 90%;
     text-align: left;
     padding-left: 20px;
 }
@@ -338,29 +326,24 @@ input::placeholder{
 }
 /*Activités*/
 .BlocActivites{
-    padding-left: 25px;
+    padding: 20px;
 }
-.imgactivite{
-    width: 96%;
-    padding-bottom: 10px;
-}
+
 .activite{
-    width:95%;
     height: 190px;
     display: flex;
     flex-direction: column;
-    justify-items: center;
     background-color:white;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-bottom: 20px;
-    box-shadow: 2px 2px 2px 1px #F2F2F2;
+    box-shadow: 3px 3px 10px 1px #F2F2F2;
 }
 .activite:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
 .imgactiv{
-    height:136px;
+    height:135px;
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
@@ -375,9 +358,13 @@ input::placeholder{
 .footer{
     display: flex;
     flex-direction: column;
-    justify-content:stretch;
     background-color: #F2F2F2;
-    padding: 0 15px 0 30px;    
+    padding: 20px 40px 20px 40px;     
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .h2footer{
     font-size: 15px;
@@ -390,16 +377,11 @@ input::placeholder{
     text-decoration: none;
     color: black;
 }  
-.footer1, .footer2, .footer3{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 /*------------ desktop-----------------*/
 @media screen and (min-width: 820px) {
 /*header*/
 header{
-        grid-template: "topLeft top top topRight" 15% / auto 20% 20% 15%;
+        grid-template: "topLeft top top topRight" 100px / auto 160px 160px 100px;
 }
 .menu{
    grid-area: top;
@@ -460,20 +442,18 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content:flex-end;
-    align-items:flex-start;
-    text-align:left;
-    margin: 0 0 40px 5px;
+    justify-content: space-between;
+    margin-bottom:20px;
 }
 /*Hébergement*/
 .hebergement{
-    flex: 70%;
+    width: 60%;
     height: 600px;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 25px;
-    padding: 20px 0px 0px 5px;
+    border-radius: 20px;
+    
 }
 .titreheb{
     margin-bottom: 5px;
@@ -483,46 +463,43 @@ header{
     padding-right: 0px;
     margin-top: 0px;
 }
-.blocheb1, .blocheb2{
-    width:100%;
+.BlocHeberResponsive{
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px;
-    margin: 0 10px 20px 0;
-}
-.blocheb1{
-    margin: 0px 0 10px 0;
 }
 .BlocHebergement{
-    width: 100%;
+    width: 33%;
     height: 210px;
-    margin: 15px 7px 0px 0px;
+    
 }
 .bloctextheb{
     padding: 5px 0 0 10px;
 }
+
 /*Les plus populaires*/
 .TitrePopulaire{
-   padding: 20px 15px 0 5px;
+   
    font-size: 18px
 }
 .BlocPlusPopulaire{
-    width:28%;
+    width:29%;
     height: 600px;
-    border-radius: 25px;
-    margin: 0 5px 0 5px;
-    padding: 0 0 20px 5px;
+    border-radius: 20px;  
 }
+
 .BlocPop{
-    width: 95%;
+    
     margin-bottom: 30px;
 }
 .bloctext{
     padding-left: 5px;
+    padding-right: 10px;
     }
 .h3titre{
     padding-right: 0px;
+    font-size: 13px;
+    
 }
 .etoilespop{
     padding-top: 0px;
@@ -535,8 +512,9 @@ header{
     padding-left: 10px;
 }
 .BlocActivites{
+   padding: 0;
+   margin-top: 40px;
    margin-bottom: 25px;  
-   padding-left: 5px; 
 }
 .activtext{
     font-size: 12px;
@@ -551,35 +529,41 @@ header{
     justify-content: space-between;
 }
 .activite{
-    width: 100%;
     height: 100%;
+    margin-bottom: 0;
 }
 .activitedesktop{
-   width: 24%;
-    height: 97%;
+    width: 24%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.activite2{
+    height: 57%;
+    
+}
+.activite3{
+    height: 37%;
+}
+.activite56{
+    height: 47%;
+}
 .imgactivite14{
-   height: 350px;
+   height: 390px;
 }
 .imgactivite2{
-    height: 180px;
+    height: 200px;
 }
 .imgactivite3{
     height: 100px;
 }
+.imgactivite56{
+    height: 155px;
+}
 /*Footer*/
 .footer{
-    width: 95%;
     flex-direction: row;
-}
-.footer1{
-    width: 38%;
-}
-.footer2, .footer3{
-    width: 32%;
+    gap: 150px
 }
 }
 /*------------------tablette----------------*/
@@ -609,27 +593,11 @@ header{
     display: flex;
 }
 /*Les plus populaires*/
-.TitrePopulaire{
-    padding-left: 15px;
-}
-.iconechart{
-    padding-right: 15px;
-}
-.BlocPopResponsive{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
-}
-.BlocPlusPopulaire{
-    width: 98%;
-    padding: 0 5px 25px 5px;
-    margin: 0;
-}
 .BlocPop{
-    margin: 0 5px 0 5px;
+    height: 160px;
 }
 .imgpop{
-    width: 40%;
+    width: 50%;
 }
 .bloctext{
     padding-left: 5px;
@@ -642,43 +610,35 @@ header{
 }
 /*Hébergement*/
 .hebergement{
-    padding: 15px 5px 30px  5px;
     margin-top: 30px;
+    padding-bottom: 50px;
     background-color: #F2F2F2;
 }
 .h3titre, .hebtext{
-    font-size: 12px;
+    font-size: 14px;
     padding-right:0px;
 }
-.blocheb1, .blocheb2{
+.BlocHeberResponsive{
     width: 100%;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0 20px 0;
+    gap: 5px;
+    
+}
+.BlocHebergement{
+    width: 33%;
 }
 .prixheb{
     margin-bottom: 0px;
 }
-.blocheb{
-    width: 30%;
-    padding: 1px;
-}
-h4{
-    padding-left: 50px;
+
+.ulpop{
+    padding-top: 5px;
 }
 /*Footer*/
 .footer{
-    width: 93%;
-    flex-direction: row;
-}
-.footer1{
-    width: 40%;
-}
-.footer2, .footer3{
-    width: 30%;
-}
-.footer3{
-    padding-left: 30px;
+       flex-direction: row;
+       gap:40px; 
 }
 }
