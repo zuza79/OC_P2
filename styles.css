@@ -1,24 +1,24 @@
-/*version 15082021*/
+/*version 16082021 html en ang*/
 /* Mobil first*/
 body{
-    font-family: "Raleway", sans serif;
+    font-family: "Raleway", "sans serif";
     margin: 0px;
 }
-/*Parametre de texte*/
-.h1titre{
+/*Parametre -- txt*/
+.h1Title{
     font-size: 22px;
     font-weight: bolder;
     }
-.h2titre{
+.h2Title{
     font-size: 20px;
     font-weight: bolder;
     }
-.h2titreactiv{
+.h2TitleActiv{
     font-size: 20px;
     font-weight: bolder;
     margin-top: 10px;
 }
-.h3titre{
+.h3Title{
     font-size: 14px;
     height: 32px;
     font-weight: bolder;
@@ -35,15 +35,15 @@ a{
     text-decoration: none;
     color: black;
 }
-.flexrow{
+.FlexRow{
     display: flex;
     flex-direction: row;
 }
-.flexcenter{
+.FlexCenter{
     display: flex; 
     justify-content: center;
 }
-.flexcolumn{
+.FlexColumn{
     display: flex; 
     flex-direction:column;
 }
@@ -67,29 +67,29 @@ header{
     display: flex;
     justify-content: space-around;
 }
-.menu-item{
+.MenuItem{
     width: 100%;
     color: black;
     border-bottom: #F2F2F2 3px solid;
 }
-.menu-item:hover{
+.MenuItem:hover{
     border-color: #0065FC;
     color:  #0065FC;
 }
-.inscription{
+.registration{
     grid-area: topRight;
     padding: 50px 30px 0 0;
     text-align: right;
 }
-#inscriptionLien{
+#RegistrationLink{
     color: #0065FC;
     font-weight: bolder;
 }
-/*Trouver votre hébergement*/
-.trouverhebergement{
+/*Trouver votre hébergement -- Search your hosting*/
+.SearchHosting{
     padding: 0 20px 0 20px;
 }
-.formulaire{
+.form{
     width: 335px;
     height: 50px;
     justify-content:start;
@@ -106,7 +106,7 @@ header{
     background-color: #F2F2F2;
     border-radius: 20px 0 0 20px;  
 }
-#rechercher{
+#searching{
     border-top: #F2F2F2 solid 1px;
     border-bottom: #F2F2F2 solid 1px;
     border-left: none;
@@ -120,13 +120,13 @@ input::placeholder{
     color: black;
     font-weight: 800;
 }
-.intrechercher{
+.IntSearching{
     font-family: raleway;
     font-size: 15px;
     font-weight: 200;
     color: black;
 }
-#iconrecher{
+#IconSearching{
     width: 50px;
     height: 50px;
     display: flex;
@@ -137,11 +137,11 @@ input::placeholder{
     background-color: #0065fc;
     border-radius: 20px 20px 20px 20px;
 }
-#map:hover, .textrecher:hover{
+#map:hover, .TxtSearching:hover{
     color:#0065fc;
     background-color: #F2F2F2
 }
-.textrecher{
+.TxtSearching{
     display: none;
     width: 135px;
     height: 50px;
@@ -157,7 +157,7 @@ input::placeholder{
     letter-spacing:0.3mm;
 }
 /*Filtres*/
-.h2titrefiltres{
+.h2TitleFiltres{
     font-size: 16px;
     padding-right: 20px;
 }
@@ -174,7 +174,7 @@ input::placeholder{
     margin:0 5px 15px 10px;
     padding-right: 5px;
     }
-.filtresicone{
+.FiltreIcone{
     width: 40px;
     height: 40px;
     align-items: center;
@@ -182,7 +182,7 @@ input::placeholder{
     background-color: #DEEBFF;
     border-radius: 100%;
 }
-.filtrestext{
+.FiltresTxt{
     font-size: 14px;
     font-weight: bolder;
     padding: 0 20px 0 10px;
@@ -190,9 +190,8 @@ input::placeholder{
     text-decoration: none;
     color: black;
 }
-.filtresicone:hover{
-    background-color: teal;
-    color: white;
+.FiltresTxt:hover, .filter:hover{
+    background-color: #DEEBFF;
 }
 /*Information*/
 #info{
@@ -200,7 +199,7 @@ input::placeholder{
     align-items: flex-start;
     padding-top: 30px;
 }
-#infoicone{
+#InfoIcone{
     width: 20px;
     height: 20px;
     display: flex;
@@ -211,17 +210,17 @@ input::placeholder{
     border-radius: 100%;
     border: #F2F2F2 solid 1px;
 }
-#infotext{
+#InfoText{
     margin: 0px;
     padding: 0 0 40px 10px;
 }
-/*Les plus populaires*/
-.BlocPlusPopulaire{
+/*Les plus populaires -- The best popular*/
+.BlocBestPopular{
     background-color: #F2F2F2;
     padding: 20px 20px 20px 20px; 
     justify-content: space-between;
 }
-.TitrePopulaire{
+.TitlePopular{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -241,20 +240,20 @@ input::placeholder{
 }
 .BlocPop:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
-.imgpop{
+.ImgPop{
     width: 40%;
     padding: 5px;
     border-radius: 25px 0 0 25px  ;
     object-fit: cover;
 }
-.bloctext{
+.BlocText{
     width: 60%;
     padding-left: 20px;
     padding-right: 20px;
 }
-.ulpop{
+.UlPop{
     justify-content: left;
     text-align: left;
     list-style: none;
@@ -262,12 +261,12 @@ input::placeholder{
     padding: 20px 0 0 0;
     letter-spacing: 2px;
 }
-.prixheb{
+.PriceHosting{
     font-size: 13px;
     font-weight: 200;
     margin: 5px 0 5px 0;
 }
-.prixpop{
+.PricePop{
     font-size: 12px;
     font-weight: 200;
     margin-top: 0px;
@@ -275,26 +274,23 @@ input::placeholder{
 .euro{
     font-weight: 700;
 }
-.hebtext{
+.HostingTxt{
     font-size: 15px;
     font-weight: bolder;
     margin-top: 3px;
     margin-bottom: 0px;
  }
-.etoilespop{
-   padding-left:0px;
-}
-.etoiles{
+.Star{
     padding-bottom: 10px;
 }
-/*Hébergement à Marseille*/
-.hebergement{
+/*Hébergement à Marseille -- Hosting in Marseille*/
+.hosting{
     padding: 20px 20px 20px 20px;
 }
-.h2titre{
+.h2Title{
     margin-bottom: 0px;
 }
-.BlocHebergement{
+.BlocHosting{
     width: 100%;
     height: 220px;
     display: flex;
@@ -304,32 +300,31 @@ input::placeholder{
     border-radius: 25px;
     box-shadow: 3px 3px 10px 1px #F2F2F2;
 }
-.BlocHebergement:hover{
+.BlocHosting:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-.imgheber{
+.ImgHosting{
     height:60%;
     padding: 5px;
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
-.bloctextheb{
+.BlocTextHosting{
     text-align: left;
     padding-left: 20px;
 }
-.ulheb{
+.UlHosting{
     height: 14px;
     margin-top: -2px;
     padding-top: 0px;
     letter-spacing: 0px; 
 }
 /*Activités*/
-.BlocActivites{
+.BlocActivities{
     padding: 20px;
 }
-
-.activite{
+.activities{
     height: 190px;
     display: flex;
     flex-direction: column;
@@ -338,16 +333,16 @@ input::placeholder{
     margin-bottom: 20px;
     box-shadow: 3px 3px 10px 1px #F2F2F2;
 }
-.activite:hover{
+.activities:hover{
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
-.imgactiv{
+.ImgActiv{
     height:135px;
     border-radius: 25px 25px 0 0 ;
     object-fit: cover;
 }
-.activtext{
+.ActivText{
     font-size: 14px;
     font-weight: 800;
     text-align: inherit;
@@ -361,24 +356,24 @@ input::placeholder{
     background-color: #F2F2F2;
     padding: 20px 40px 20px 40px;     
 }
-.footer-item{
+.FooterItem{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.h2footer{
+.h2Footer{
     font-size: 15px;
     font-weight: bolder;
     padding-top: 15px;
 }
-.pfooter{
+.pFooter{
     height: 30px;
     font-size: 13px;
     text-decoration: none;
     color: black;
 }  
 /*------------ desktop-----------------*/
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 950px) {
 /*header*/
 header{
         grid-template: "topLeft top top topRight" 100px / auto 160px 160px 120px;
@@ -386,38 +381,38 @@ header{
 .menu{
    grid-area: top;
 }
-.menu-item{
+.MenuItem{
     padding-top: 50px;
     border-bottom: none;
     border-top: #F2F2F2 3px solid;
 }
-.menu-item:hover{
+.MenuItem:hover{
     border-color: #0065FC;
     color:  #0065FC;
 }
-#inscriptionLien{
+#RegistrationLink{
     padding-right: 10px;
 }
-.inscription{
+.registration{
     padding-top:53px;  
 }
 .logo{
     padding-left: 45px; 
 }
-/*Trouver votre hébergement*/
-.trouverhebergement{
+/*Trouver votre hébergement -- Search your hosting*/
+.SearchHosting{
     padding-left: 45px;
 }
-/*Formulaire rechercher*/
-.formulaire{
+/*Formulaire rechercher -- Form searching*/
+.form{
     width: 420px;
     padding-top: 20px;
     margin-bottom: 30px;
 }
-#iconrecher{
+#IconSearching{
     display: none;
 }
-.textrecher{
+.TxtSearching{
     display: flex;
 }
 /*Filtre*/
@@ -427,18 +422,18 @@ header{
     flex-direction: row;
     padding-left: 0px;
 }
-.filtrestext{
+.FiltresTxt{
     padding-right: 5px;
 }
-.RomEtAnimaux{
+.FilterTablet{
     display: flex;
     flex-direction: row;
 }
 #info{
     padding-top: 20px;
 }
-/*Hébergement et Les plus populaire*/
-.HebEtPop{
+/*Hébergement et Les plus populaire -- Hosting and the best popular*/
+.HostingAndPopular{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -447,8 +442,8 @@ header{
     margin-bottom:20px;
     ;
 }
-/*Hébergement*/
-.hebergement{
+/*Hébergement -- Hosting*/
+.hosting{
     width: 60%;
     height: 600px;
     display: flex;
@@ -456,114 +451,100 @@ header{
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 25px;
-    
 }
-.titreheb{
-    margin-bottom: 5px;
-    padding-right: 30px;
-}
-.hebtext{
+.HostingTxt{
+    font-size: 15px;
     padding-right: 0px;
     margin-top: 0px;
 }
-.BlocHeberResponsive{
+.BlocHostingResponsive{
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
 }
-.BlocHebergement{
+.BlocHosting{
     width: 32%;
-    height: 210px;
-    
+    height: 210px;  
 }
-.bloctextheb{
+.BlocTextHosting{
     padding: 5px 0 0 10px;
 }
 
-/*Les plus populaires*/
-.TitrePopulaire{
-   
+/*Les plus populaires -- The best of popular*/
+.TitleHosting{
    font-size: 18px
 }
-.BlocPlusPopulaire{
+.BlocBestPopular{
     width:28%;
     height: 600px;
     border-radius: 20px;  
     padding: 25px;
 }
-
 .BlocPop{
-    
     margin-bottom: 30px;
 }
-.bloctext{
+.BlocText{
     padding-left: 5px;
     padding-right: 10px;
-    }
-.h3titre{
-    padding-right: 0px;
-    font-size: 15px;
-    
 }
-.etoilespop{
+.h3Title{
+    padding-right: 0px;
+    font-size: 15px;    
+}
+.Star{
     padding-top: 0px;
 }
-.prixpoptablette{
+.PricePopTablet{
     margin-bottom: 0px;
 }
 /*Activités*/
-.txttitreactiv{
-    padding-left: 10px;
-}
-.BlocActivites{
+.BlocActivities{
     padding-left: 45px;
     padding-right: 45px;
    margin-top: 40px;
    margin-bottom: 25px;  
 }
-.activtext{
+.ActivText{
     font-size: 12px;
     margin-bottom: 15px;
     padding-left: 15px;   
 }
-.imgactivite{
+.ImgActivities{
     width: 100%;
     height: 445px;
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
 }
-.activite{
+.activities{
     height: 100%;
     margin-bottom: 0;
-  
 }
-.activitedesktop{
+.ActivitiesDesktop{
     width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.activite2{
-    height: 57%;
-    
+.activ2{
+    height: 57%; 
 }
-.activite3{
+.activ3{
     height: 37%;
 }
-.activite56{
+.activ56{
     height: 47%;
 }
-.imgactivite14{
+.ImgActiv14{
    height: 390px;
 }
-.imgactivite2{
+.ImgActiv2{
     height: 200px;
 }
-.imgactivite3{
+.ImgActiv3{
     height: 110px;
 }
-.imgactivite56{
+.ImgActiv56{
     height: 155px;
 }
 /*Footer*/
@@ -572,30 +553,27 @@ header{
     gap: 230px;
 }
 }
-/*------------------tablette----------------*/
+/*------------------tablet----------------*/
 @media screen and (min-width: 600px) and (max-width: 819px) {
-/*Titre*/
-.h1titre{
+/*Titre -- Title*/
+.h1Title{
     font-size: 19px;
 }
 /*Filtres*/
-.RomEtAnimaux{
+.FilterTablet{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
 }
-#romantique{
-    margin-right: 20px;
-}
-/*Formulaire*/
-.formulaire{
+/*Formulaire -- Form*/
+.form{
     width: 420px;
     padding-top: 20px;
     margin-bottom: 30px;
 }
-#iconrecher{
+#IconSearching{
     display: none;
 }
-.textrecher{
+.TxtSearching{
     display: flex;
 }
 /*Les plus populaires*/
@@ -605,41 +583,39 @@ header{
 .imgpop{
     width: 50%;
 }
-.bloctext{
+.BlocText{
     padding-left: 5px;
 }
-.prixpoptablette{
+.PricePopTablet{
     margin-bottom: 0px;
 }
 .ulpop{
     padding-top: 10px;
 }
 /*Hébergement*/
-.hebergement{
+.hosting{
     margin-top: 30px;
     padding-bottom: 50px;
     background-color: #F2F2F2;
 }
-.h3titre, .hebtext{
+.h3Title, .HostingTxt{
     font-size: 14px;
     padding-right:0px;
 }
-.BlocHeberResponsive{
+.BlocHostingResponsive{
     width: 100%;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
-    
 }
-.BlocHebergement{
+.BlocHosting{
     width: 33%;
 }
-.prixheb{
+.PriceHosting{
     margin-bottom: 0px;
 }
-
-.ulpop{
+.UlPop{
     padding-top: 5px;
 }
 /*Footer*/
@@ -647,5 +623,187 @@ header{
        flex-direction: row;
        gap:40px; 
        justify-content: space-between;
+}
+}
+/*-------between tablet and desktop---------------------*/
+@media screen and (min-width: 820px) and (max-width: 949px){
+    /*header*/
+header{
+    grid-template: "topLeft top top topRight" 100px / auto 160px 160px 120px;
+}
+.menu{
+grid-area: top;
+}
+.MenuItem{
+padding-top: 50px;
+border-bottom: none;
+border-top: #F2F2F2 3px solid;
+}
+.MenuItem:hover{
+border-color: #0065FC;
+color:  #0065FC;
+}
+#RegistrationLink{
+padding-right: 10px;
+}
+.registration{
+padding-top:53px;  
+}
+.logo{
+padding-left: 45px; 
+}
+/*Trouver votre hébergement -- Search your hosting*/
+.SearchHosting{
+padding-left: 45px;
+}
+/*Formulaire rechercher -- Form searching*/
+.form{
+width: 420px;
+padding-top: 20px;
+margin-bottom: 30px;
+}
+#IconSearching{
+display: none;
+}
+.TxtSearching{
+display: flex;
+}
+/*Filtre*/
+#filtres{
+width: 100%;
+display: flex;
+flex-direction: row;
+padding-left: 0px;
+}
+.FiltresTxt{
+padding-right: 5px;
+}
+.FilterTablet{
+display: flex;
+flex-direction: row;
+}
+#info{
+padding-top: 20px;
+}
+/*Hébergement et Les plus populaire -- Hosting and the best popular*/
+.HostingAndPopular{
+width: 100%;
+display: flex;
+flex-direction: row-reverse;
+justify-content: left;
+gap: 40px;
+margin-bottom:20px;
+;
+}
+/*Hébergement -- Hosting*/
+.hosting{
+width: 60%;
+height: 600px;
+display: flex;
+flex-direction: column;
+background-color: #F2F2F2;
+border-radius: 20px;
+padding: 25px;
+}
+.HostingTxt{
+font-size: 13px;
+padding-right: 0px;
+margin-top: 0px;
+}
+.BlocHostingResponsive{
+display: flex; 
+flex-direction: row;
+justify-content: space-between;
+}
+.BlocHosting{
+width: 32%;
+height: 210px;  
+}
+.BlocTextHosting{
+padding: 5px 0 0 10px;
+}
+
+/*Les plus populaires -- The best of popular*/
+.h2Title{
+font-size: 16px;
+}
+.BlocBestPopular{
+width:28%;
+height: 600px;
+border-radius: 20px;  
+padding: 25px;
+}
+.BlocPop{
+margin-bottom: 30px;
+}
+.BlocText{
+padding-left: 5px;
+}
+.h3Title{
+height:48px;
+padding-right: 0px;
+font-size: 13px;  
+margin-top: 15px; 
+}
+.UlPop{
+padding: 0px;
+}
+.PricePopTablet{
+margin-bottom: 0px;
+}
+/*Activités*/
+.BlocActivities{
+padding-left: 45px;
+padding-right: 45px;
+margin-top: 40px;
+margin-bottom: 25px;  
+}
+.ActivText{
+font-size: 12px;
+margin-bottom: 15px;
+padding-left: 15px;   
+}
+.ImgActivities{
+width: 100%;
+height: 445px;
+display: flex;
+flex-direction: row;
+justify-content:space-between ;
+}
+.activities{
+height: 100%;
+margin-bottom: 0;
+}
+.ActivitiesDesktop{
+width: 23%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.activ2{
+height: 57%; 
+}
+.activ3{
+height: 37%;
+}
+.activ56{
+height: 47%;
+}
+.ImgActiv14{
+height: 390px;
+}
+.ImgActiv2{
+height: 200px;
+}
+.ImgActiv3{
+height: 110px;
+}
+.ImgActiv56{
+height: 155px;
+}
+/*Footer*/
+.footer{
+flex-direction: row;
+gap: 150px;
 }
 }
