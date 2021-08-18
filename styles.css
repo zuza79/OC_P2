@@ -104,7 +104,9 @@ header{
     align-items: center;
     text-align: center;
     background-color: #F2F2F2;
-    border-radius: 20px 0 0 20px;  
+    border-radius: 20px 0 0 20px; 
+    margin-top: auto;
+    margin-bottom: auto; 
 }
 #searching{
     border-top: #F2F2F2 solid 1px;
@@ -126,7 +128,7 @@ input::placeholder{
     font-weight: 200;
     color: black;
 }
-#IconSearching{
+#search{
     width: 50px;
     height: 50px;
     display: flex;
@@ -199,7 +201,7 @@ input::placeholder{
     align-items: flex-start;
     padding-top: 30px;
 }
-#InfoIcone{
+.fa-info{
     width: 20px;
     height: 20px;
     display: flex;
@@ -409,7 +411,7 @@ header{
     padding-top: 20px;
     margin-bottom: 30px;
 }
-#IconSearching{
+#search{
     display: none;
 }
 .TxtSearching{
@@ -570,7 +572,7 @@ header{
     padding-top: 20px;
     margin-bottom: 30px;
 }
-#IconSearching{
+#search{
     display: none;
 }
 .TxtSearching{
@@ -662,7 +664,7 @@ width: 420px;
 padding-top: 20px;
 margin-bottom: 30px;
 }
-#IconSearching{
+#search{
 display: none;
 }
 .TxtSearching{
