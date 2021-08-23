@@ -167,7 +167,7 @@ input::placeholder{
     justify-content: left;
     align-items: center;
     text-align:inherit;
-    border: #F2F2F2 solid 2px;
+    border: #F2F2F2 solid 3px;
     border-left: #DEEBFF;
     border-radius: 25px;
     margin:0 5px 15px 10px;
